@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*,
+*:before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-padding-top: 110px;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* height: 5000px; */
+}
+
+section, nav, .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1170px;
+    /* border: 1px solid white; */
+    padding-left: 15px;
+    padding-right: 15px;    
+}
+
+
+:active,
+:hover, 
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a, 
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* ================variable define=========== */
+body{
+    background-color: #000;
+    backdrop-filter: blur(10px);
+}
+:root{
+    --primary-color:#ff553e;
+    --secondry-color:#333;
+    --third-color:#222222;
+    --white-color:#fff;
+    --black-color:#000;
+    --gold-color:#C2944B;
+    --purple-color: rgb(170, 0, 170);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-weight: 400;
+    font-size: 100%;
+    font-family: "Dosis", sans-serif;
+    
+}
+
+
+/* ==============custom scrollbar=========== */
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+/* ============custom css design========= */
+
+.main-btn{
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.12rem;
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 30px;
+    position: relative;
+    text-decoration:underline ;
+}
+
+.main-btn::after,
+.main-btn::before{
+    position: absolute;
+    top: 50%;
+    background-color: var(--gold-color);
+    left: 0px !important;
+    width: 100%;
+    height: 1px;
+    content: "";
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+}
+
+.main-btn::after{
+    transform: translateY(20px) ;
+    -webkit-transform: translateY(20px);
+}
+
+.main-btn:hover::before{
+transform: rotate(20deg);
+-webkit-transform: rotate(20deg);
+background-color: var(--primary-color);
+}
+
+.main-btn:hover::after{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    background-color: var(--primary-color);
+}
+
+.main-btn:hover{
+    color: var(--primary-color);
+}
+
+
+.heading{
+    text-align: center;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        /* font-family: "Dosis", sans-serif; */
+
+    }
+    
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--white-color);
+        line-height: 20px;
+        letter-spacing: 4px;
+        opacity: 0.8;
+        text-transform: capitalize;
+    }
+}
+
+/* header section */
+
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+header .top-header{
+    height: auto;
+    padding: 16px 7%;
+    background-color: #333;
+    width: 100%;
+}
+header .top-header .container {
+    height: 100%;
+    width: 100%;
+}
+
+header .top-header .container .row{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    color: #fff;
+}
+
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background: var(--black-color);
+    box-shadow:2px 4px 8px 0px #fff;
+    z-index: 1000;
+    position: relative;
+
+}
+
+
+
+header .navbar .container{
+    height: 100%;
+    width: 100%;
+}
+
+header .navbar .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &.active{
+        position: fixed !important;
+        top: 0;left: 0;right: 0;
+        border-bottom: none;
+    }
+}
+
+header .navbar .container .row .nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .container .row .nav-menu ul li{
+    margin-left: 5px !important;
+    list-style-type: none;
+    /* border: 1px solid #fff; */
+}
+
+.navbar .nav-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px !important;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.navbar .nav-menu ul li a:hover{
+    background: url(../images/13_360x-Photoroom.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+header .navbar .container .row form{
+    border-color: var(--gold-color) !important;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    width:13%;
+    height: 30px;
+    border-radius: 100px;
+}
+
+header .navbar .container .row form input{
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 100px;
+}
+
+header .navbar .container .row form button{
+    border-radius: 100px;
+    width: 50%;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    background-color: var(--gold-color);
+    color: var(--white-color);
+    gap: 2px;
+    cursor: pointer;
+}
+
+header .navbar .container .row form button:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+header .navbar .container .row .social-icons{
+    gap: 8px;
+}
+header .navbar .container .row .social-icons i{
+    color: var(--white-color);
+    font-size: 22px;
+    border: 1px solid var(--gold-color);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .navbar .container .row .social-icons i:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.navbar .container .row #menu-btn{
+    font-size: 2rem;
+    color: #fff !important;
+    cursor: pointer;
+    display: none;
+}
+
+/* contact banner */
+
+.contact-bnr{
+    height: auto;
+    width: 100%;
+    background-color: var(--secondry-color);
+}
+
+.contact-bnr .container {
+    height: auto;
+    width: 100%;
+}
+
+.contact-bnr .container .row{
+    height: auto;
+    width: 100%;
+}
+
+.contact-bnr .container .row .bnr-img{
+    background: url(../images/bg/bg-3.jpg), linear-gradient(rgba(0, 0, 0, 0.658)100% , rgba(0,0,0,0.1) 100%) no-repeat;
+    backdrop-filter: blur (5px);
+    border: 1px solid var(--gold-color);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    object-fit: cover !important;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.contact-bnr .container .row .bnr-img h3{
+    font-size: 50px !important;
+    color: var(--gold-color);
+    opacity: 10 !important;
+}
+
+.contact-bnr .container .row .bnr-img p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+
+/* maps section */
+
+.maps{
+    /* margin-top: 50px; */
+    background-color: var(--secondry-color);
+}
+
+.maps .container{
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+/* contact-form */
+
+.contact-form{
+    height: auto;
+    width: 100%;
+    background-color: var(--secondry-color);
+}
+
+.contact-form .container {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.contact-form .container .row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form .container .row form{
+    width: 49% !important;
+    
+}
+
+.contact-form .container .row form h3{
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.contact-form .container .row form .input1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-form .container .row form .input1 input[type="email"],
+.contact-form .container .row form .input1 input[type="text"]{
+    width: 48%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    border:none;
+    outline: none;
+    background-color: var(--third-color);
+}
+
+
+.contact-form .container .row form .input2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-form .container .row form .input2 input[type="tel"],
+.contact-form .container .row form .input2 input[type="text"]{
+    width: 48%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    border:none;
+    outline: none;
+    background-color: var(--third-color);
+}
+
+.contact-form .container .row form textarea{
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: var(--secondry-color);
+    background-color: var(--third-color);
+    border: none;
+}
+
+.contact-form .container .row form .main-btn{
+    margin-top: 30px;
+    color: var(--white-color);
+}
+
+.contact-form .container .row .my-info{
+    width: 49% !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.contact-form .container .row .my-info h3{
+    font-size: 30px;
+    color: var(--white-color);
+    /* margin-bottom: 20px; */
+}
+
+.contact-form .container .row .my-info .para{
+    font-size: 16px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-form .container .row .my-info a{
+    display: flex;
+    justify-content: left;
+    color: var(--white-color);
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.contact-form .container .row .my-info .work{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form .container .row .my-info .work h4{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.contact-form .container .row .my-info .work p{
+    color: var(--white-color);
+}
+
+
+
+/* footer section */
+
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: var(--third-color);
+}
+
+.footer .container{
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer .container .row{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer .container .row .fo-box .box-content{
+    color: var(--white-color);
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.footer .container .row .fo-box .head{
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer .container .row .fo-box ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 20px;
+}
+
+.footer .container .row .fo-box ul li a{
+    color: var(--white-color);
+}
+
+.footer .container .row .fo-box .footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 20%;
+}
+
+
+
+.footer .container .row .fo-box .footer-social i{
+    border: 1px solid var(--gold-color);
+    color: var(--white-color);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+
+
+.footer .container .row .fo-box .footer-social i:hover{
+    background-color: var(--gold-color);
+}
+
+
+.footer .container .footer-bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.footer .container .footer-bottom .sign{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    width: 80%;
+}
+
+.footer .container .footer-bottom .sign h5{
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.footer .container .footer-bottom .sign form{
+    width: 80% !important;
+    background-color: var(--third-color);
+    border-bottom: 2px solid var(--black-color) !important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.footer .container .footer-bottom .sign form #email{
+    width: 80% !important;
+    height: 50px;
+    border-radius: 20px;   
+    border: none;
+    background-color: var(--third-color);
+    color: var(--white-color) !important;
+}
+
+.footer .container .footer-bottom .sign form .btn{
+    padding: 5px;
+    margin-right: 10px;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.footer .container .footer-bottom .sign a{
+    color: var(--white-color);
+}
+
+
+.footer .container .footer-bottom .credit-img{
+    display: flex;
+    justify-content: center;
+    align-self: center;    
+}
+
+.copy-right{
+    background-color: var(--secondry-color);
+    height: auto;
+    width: 100%;
+}
+
+.copy-right .container {
+    height: auto;
+    width: 100%;
+    padding:20px;
+}
+
+.copy-right .container .row{
+    height: auto;
+    width: 100%;
+
+}
+
+.copy-right .container .row h5{
+    color: var(--white-color);
+    font-size: 16px;
+    text-align: center;
+}
