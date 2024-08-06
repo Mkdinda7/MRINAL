@@ -345,7 +345,7 @@ header .navbar .container .row .social-icons i:hover{
 .banner .swiper .swiper-wrapper .slide2,
 .banner .swiper .swiper-wrapper .slide3{
     background-size: cover;
-    background-position: center;
+    background-position: center left;
     background-repeat: no-repeat;
 
 }
