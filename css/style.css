@@ -318,7 +318,7 @@ header .navbar .container .row .social-icons i:hover{
 
 
 .banner{
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 
@@ -345,10 +345,14 @@ header .navbar .container .row .social-icons i:hover{
 .banner .swiper .swiper-wrapper .slide2,
 .banner .swiper .swiper-wrapper .slide3{
     background-size: cover;
-    background-position: center left;
+    background-position: center right;
     background-repeat: no-repeat;
 
 }
+.banner .swiper .swiper-wrapper .slide3{
+    background-position: center left;
+   }
+
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-1,
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-2{
     position: absolute;
@@ -398,34 +402,6 @@ header .navbar .container .row .social-icons i:hover{
     position: absolute;
     bottom: 0px !important;
 }
-/* banner card */
-.couple{
-    height: auto;
-    width: 100%;
-    background-color: var(--secondry-color);
-    z-index: 1000;
-    margin-top: -5%;
-}
-
-.couple .container{
-    height: 100%;
-    width: 100%;
-}
-.couple .container .row{
-    display: flex;
-    justify-content: space-between !important;
-    align-items: center;
-    width: 100%;
-    gap: 80px;
-}
-.couple .container .row .Banner-2,
-.couple .container .row .Banner-1{
-    z-index: 10;
-    width: 49%;
-}
-
-
-
 
 /* new arrival */
 
