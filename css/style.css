@@ -11,9 +11,7 @@
     scroll-behavior: smooth;
 }
 
-body{
-    height: 5000px;
-}
+
 
 section, nav, .row{
     display: flex;
@@ -318,7 +316,7 @@ header .navbar .container .row .social-icons i:hover{
 
 
 .banner{
-    height: 500px;
+    height: 600px !important;
     width: 100%;
 }
 
@@ -349,9 +347,6 @@ header .navbar .container .row .social-icons i:hover{
     background-repeat: no-repeat;
 
 }
-.banner .swiper .swiper-wrapper .slide3{
-    background-position: center left;
-   }
 
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-1,
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-2{
