@@ -12,20 +12,18 @@
 }
 
 body{
-    height:5000px;
+    height: 5000px;
 }
-
 
 section, nav, .row{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100% !important;
 }
 
 .container{
-    max-width: 1170px !important;
-    width: 100% !important;
+    max-width: 1170px;
+    width: 100%;
     /* border: 1px solid white; */
     padding-left: 15px;
     padding-right: 15px;    
@@ -174,14 +172,8 @@ header .top-header .container .row{
     background: var(--black-color);
     box-shadow:2px 4px 8px 0px #fff;
     z-index: 1000;
-    position: relative;  
-
-    /* &.active{
-        position: fixed !important;
-        top: 0 !important;left: 0;right: 0;
-        border-bottom: none;
-        box-shadow: 4px 4px 4px #fff;
-    } */
+    position: relative;
+    
 
 }
 
@@ -199,7 +191,12 @@ header .navbar .container .row{
     padding-top: 15px;
     padding-bottom: 15px;
 
-   
+    &.active{
+        position: fixed !important;
+        top: 0 !important;left: 0;right: 0;
+        border-bottom: none;
+        box-shadow: 4px 4px 4px #fff;
+    }
 }
 
 header .navbar .container .row .nav-menu ul{
@@ -287,7 +284,7 @@ header .navbar .container .row .social-icons i:hover{
     border-color: var(--primary-color);
 }
 
-.navbar .container .row  #menu-btn{
+.navbar .container .row #menu-btn{
     font-size: 2rem;
     color: #fff !important;
     cursor: pointer;
@@ -343,17 +340,13 @@ header .navbar .container .row .social-icons i:hover{
 }
 
 .banner .swiper .swiper-wrapper .slide1,
-.banner .swiper .swiper-wrapper .slide2{
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-}
+.banner .swiper .swiper-wrapper .slide2,
 .banner .swiper .swiper-wrapper .slide3{
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
-}
 
+}
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-1,
 .banner .swiper .swiper-wrapper .swiper-slide   #slide-2{
     position: absolute;
@@ -403,6 +396,34 @@ header .navbar .container .row .social-icons i:hover{
     position: absolute;
     bottom: 0px !important;
 }
+/* banner card */
+.couple{
+    height: auto;
+    width: 100%;
+    background-color: var(--secondry-color);
+    z-index: 1000;
+    margin-top: -5%;
+}
+
+.couple .container{
+    height: 100%;
+    width: 100%;
+}
+.couple .container .row{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+}
+.couple .container .row .Banner-2,
+.couple .container .row .Banner-1{
+    z-index: 10;
+    width: 49%;
+}
+
+
+
 
 /* new arrival */
 
@@ -1267,7 +1288,9 @@ margin-bottom: 25px !important;
     
 }
 
-
+#blog .container .row .blog-area .card .card-body .main-btn{
+   /* margin-top: 50px !important; */
+}
 /* review part */
 #review{
     height: auto;
