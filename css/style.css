@@ -11,6 +11,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+    height:5000px;
+}
 
 
 section, nav, .row{
@@ -316,7 +319,7 @@ header .navbar .container .row .social-icons i:hover{
 
 
 .banner{
-    height: 600px !important;
+    height: 600px;
     width: 100%;
 }
 
