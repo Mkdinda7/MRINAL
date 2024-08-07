@@ -853,6 +853,10 @@
         position: absolute;
         margin: 0 !important;
         padding: 0 !important;
+
+        h1{
+            font-size:35px;
+        }
        
     }
 
