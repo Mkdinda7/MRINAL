@@ -95,9 +95,8 @@
         }
 
         #menu-btn {
-            display: block !important;
+            display: inline-block !important;
             transition: all 0.5s ease;
-            margin-left:10px;
             &.fa-times {
                 transform: rotate(180deg);
             }
