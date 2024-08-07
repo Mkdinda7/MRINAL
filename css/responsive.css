@@ -1028,6 +1028,9 @@
 }
 
 @media screen and (max-width: 375px){
+    header .navbar .container .row .social-icons{
+        display:none;
+    }
     .banner .swiper .swiper-wrapper .swiper-slide  .slide-content {
         h1{
             font-size: 25px !important;
