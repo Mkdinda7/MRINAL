@@ -282,7 +282,7 @@ header .navbar .container .row .social-icons i:hover{
     border-color: var(--primary-color);
 }
 
-.navbar .container .row #menu-btn{
+.navbar .container .row .social-icons #menu-btn{
     font-size: 2rem;
     color: #fff !important;
     cursor: pointer;
