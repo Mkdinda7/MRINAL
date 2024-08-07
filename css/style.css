@@ -266,11 +266,11 @@ header .navbar .container .row form button:hover{
 }
 
 header .navbar .container .row .social-icons{
-    gap: 10px;
+    gap: 8px;
 }
 header .navbar .container .row .social-icons i{
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 22px;
     border: 1px solid var(--gold-color);
     padding: 8px;
     border-radius: 50%;
@@ -286,7 +286,6 @@ header .navbar .container .row .social-icons i:hover{
     font-size: 1.5rem;
     color: #fff !important;
     cursor: pointer;
-    line-height:middle;
     display: none;
 }
 
