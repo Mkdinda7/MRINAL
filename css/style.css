@@ -266,7 +266,7 @@ header .navbar .container .row form button:hover{
 }
 
 header .navbar .container .row .social-icons{
-    gap: 8px;
+    gap: 10px;
 }
 header .navbar .container .row .social-icons i{
     color: var(--white-color);
@@ -286,6 +286,7 @@ header .navbar .container .row .social-icons i:hover{
     font-size: 2rem;
     color: #fff !important;
     cursor: pointer;
+    line-height:middle;
     display: none;
 }
 
