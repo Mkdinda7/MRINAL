@@ -270,7 +270,7 @@ header .navbar .container .row .social-icons{
 }
 header .navbar .container .row .social-icons i{
     color: var(--white-color);
-    font-size: 22px;
+    font-size: 1.5rem;
     border: 1px solid var(--gold-color);
     padding: 8px;
     border-radius: 50%;
